@@ -1,0 +1,9 @@
+<div class="item-container">
+  <img src="{{ product.img }}" class="image" (click)="onClick()" />
+  <p>{{ product.name }}</p>
+  <p>{{ product.price }}</p>
+  <select class="selection" [(ngModel)]="selected">
+    <option *ngFor="let option of opt">{{ opt }}</option>
+  </select>
+  <button (click)="addItem(product)">Add Item</button>
+</div>

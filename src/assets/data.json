@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "name": "TV",
+    "price": 9.99,
+    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5985/5985620_sa.jpg",
+    "title": "SUMMER SALE",
+    "desc": "SAVE MORE WHEN SHOPPING WITH US!"
+  },
+  {
+    "id": 2,
+    "name": "Somthing",
+    "price": 9.99,
+    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1684/1684202_sa.jpg",
+    "title": "HOT DEALS",
+    "desc": "SOMETHING ALL DADS WILL ENJOY"
+  },
+  {
+    "id": 3,
+    "name": "Somthing",
+    "price": 9.99,
+    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1454/1454123_sa.jpg",
+    "title": "GREAT DEALS ON GAMES",
+    "desc": "BUY A NEW TOY FOR DAD!"
+  },
+  {
+    "id": 4,
+    "name": "Somthing",
+    "price": 9.99,
+    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5734/5734900ld.jpg",
+    "title": "ONLINE DISCOUNTS",
+    "desc": "BETTER VALUE WHEN SHOPPING WITH US!"
+  },
+  {
+    "id": 5,
+    "name": "Somthing",
+    "price": 9.99,
+    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5581/5581165_sa.jpg",
+    "title": "COUPONS AT CHECKOUT",
+    "desc": "BUY MORE AND SAVE MORE WITH US!"
+  },
+  {
+    "id": 6,
+    "name": "Somthing",
+    "price": 9.99,
+    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4586/4586300_sa.jpg",
+    "title": "TABLETS"
+  }
+]

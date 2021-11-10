@@ -1,0 +1,12 @@
+<h2 class="confirm-container" *ngIf="showError">
+  Your cart does not have any items.
+</h2>
+<div class="confirm-container" *ngIf="!showError">
+  <div class="confirm-items">
+    <h2 class="confirm-header">Processed!</h2>
+    <p>Thank You for your purchase!</p>
+    <p>Total: {{ paymentInfo.total }}</p>
+    <p>Items are shipped in 3-5 business days!</p>
+    <button routerLink="/">Back to products</button>
+  </div>
+</div>
