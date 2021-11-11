@@ -7,7 +7,7 @@ import { Product } from '../models/product';
   providedIn: 'root',
 })
 export class ProductsService {
-  private data = '../../assets/data';
+  private data = 'assets/data.json';
 
   constructor(private http: HttpClient) {}
 
