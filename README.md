@@ -1,6 +1,19 @@
 # MyStore
+MyStore is a front-end Angular application that displays products which can be added to a shopping cart, and processed as a purchase by entering a name, address, and credit-card information.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
+There are a total of four endpoints in this application: 
+
+"\" products: Provides the list of products in the browser
+"\product/:productName": displays a single product item with a simply ad. 
+"\cart" cart: allows the user to view items ready for purchase, edit quantity, and enter user information. 
+\confirmation confirmation page: Alerts the user of a successful transaction.
+
+Getting Started
+To get this project, type git clone https://github.com/rlondon3/MyStore.git in your terminal.
+cd MyStore
+Install all the dependencies.
+Finally type ng serve --port 3000 to start the project.
+Go to localhost:3000 to view/test the app.
 
 ## Development server
 
