@@ -3,10 +3,10 @@ MyStore is a front-end Angular application that displays products which can be a
 
 There are a total of four endpoints in this application: 
 
-"\" products: Provides the list of products in the browser
-"\product/:productName": displays a single product item with a simply ad. 
-"\cart" cart: allows the user to view items ready for purchase, edit quantity, and enter user information. 
-\confirmation confirmation page: Alerts the user of a successful transaction.
+"\" products: Provides the list of products in the browser. <br>
+"\product/:productName": displays a single product item with a simply ad.<br> 
+"\cart" cart: allows the user to view items ready for purchase, edit quantity, and enter user information.<br> 
+\confirmation confirmation page: Alerts the user of a successful transaction.<br>
 
 Getting Started
 To get this project, type git clone https://github.com/rlondon3/MyStore.git in your terminal.
