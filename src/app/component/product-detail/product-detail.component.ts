@@ -13,9 +13,14 @@ import { map } from 'rxjs/operators';
 export class ProductDetailComponent implements OnInit {
   product!: Product;
 
-  public selectedOption: number = 1;
+  public selected: number = 1;
 
   public opt = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  public addItem(product: Product) {
+    this.cartService.addProduct(this.selected, product);
+    alert(`Item Added!`);
+  }
 
   constructor(
     private prodServ: ProductsService,
@@ -32,14 +37,9 @@ export class ProductDetailComponent implements OnInit {
 
     const promise = this.prodServ
       .getProducts()
-      .pipe(map((products) => products.filter((i) => i.name === capitalize)))
+      .pipe(map((products) => products.filter((p) => p.name === capitalize)))
       .toPromise();
 
     promise.then((data) => (this.product = data[0]));
-  }
-
-  public addToCart(product: Product) {
-    this.cartService.addProduct(this.selectedOption, product);
-    alert(`Added to Cart!`);
   }
 }

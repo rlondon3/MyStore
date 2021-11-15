@@ -25,6 +25,7 @@ export class CartService {
       this.productsInCart = this.productsInCart
         .filter((p) => p.id !== product.id)
         .concat(checkProduct);
+      console.log(this.productsInCart);
       return this.productsInCart;
     } else {
       const quantityInt = parseInt(quantity as unknown as string);
@@ -35,10 +36,16 @@ export class CartService {
   }
 
   updateCart(quantity: number, product: Product) {
-    if (quantity <= 0) {
-      const deleteProd = this.deleteProduct(product.id);
-      alert(`Check items in cart`);
-      return deleteProd;
+    if (quantity === 0) {
+      const changeQty = this.productsInCart.map((p) => {
+        if (p.id === product.id) {
+          p['quantity'] = parseInt(quantity as unknown as string);
+        }
+        this.deleteProduct(product.id);
+        alert(`Item Deleted!`);
+        return p;
+      });
+      return this.productsInCart;
     } else {
       this.productsInCart = this.productsInCart.map((p) => {
         if (p.id === product.id) {

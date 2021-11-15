@@ -22,10 +22,16 @@ export class CartComponent implements OnInit {
     this.products = this.cartService.updateCart(e, product);
     this.total = this.products.reduce((pre, curr) => {
       const currNum = curr.price * parseInt(curr.quantity as unknown as string);
-      return pre + currNum;
+      const totalSum = pre + currNum;
+      return parseFloat(totalSum.toFixed(2));
     }, 0);
     if (this.total === 0) {
       this.empty = true;
+    }
+    if (isNaN(this.total)) {
+      this.total = 0;
+    } else {
+      this.total;
     }
   };
 

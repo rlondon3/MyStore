@@ -20,11 +20,11 @@ export class ItemsComponent implements OnInit {
   };
 
   public addItem(product: Product) {
-    this.cartservice.addProduct(this.selected, product);
+    this.cartService.addProduct(this.selected, product);
     alert(`Item Added!`);
   }
 
-  constructor(private router: Router, private cartservice: CartService) {
+  constructor(private router: Router, private cartService: CartService) {
     this.product = {
       id: 0,
       name: ' ',
