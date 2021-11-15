@@ -1,0 +1,21 @@
+.item-container {
+  align-items: center;
+  margin: 20px;
+}
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+@media (max-width: 496px) {
+  .info-container {
+    display: inline-block;
+  }
+  button {
+    margin: 10px 5px !important;
+  }
+}

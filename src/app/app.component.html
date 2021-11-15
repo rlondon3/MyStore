@@ -1,7 +1,19 @@
-<div class="container">
-  <h1>My Store</h1>
+<div class="container-fluid">
+  <nav class="navbar navbar-dark bg-dark" id="top">
+    <div class="nav-container">
+      <a class="navbar-brand" routerLink="/">
+        <h1 class="text-muted">My Store</h1>
+      </a>
+    </div>
+    <div class="links-container">
+      <a class="nav-links" routerLink="/cart">Cart</a>
+      <a class="nav-links" routerLink="/">Products</a>
+    </div>
+  </nav>
   <router-outlet></router-outlet>
-  <a routerLink="/cart">Cart</a>
-  <br />
-  <a routerLink="/">Products</a>
+  <footer>
+    <div class="navbar navbar-light bg-light toTop">
+      <a class="arrow" href="#top">&#8683;</a>
+    </div>
+  </footer>
 </div>

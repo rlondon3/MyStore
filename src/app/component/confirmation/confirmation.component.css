@@ -1,0 +1,11 @@
+.confirm-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+.cart {
+  display: flex;
+
+  justify-content: center;
+}

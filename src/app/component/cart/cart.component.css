@@ -1,0 +1,15 @@
+img {
+  width: 30%;
+  margin-top: 10px;
+}
+.cart-item {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+@media (max-width: 462px) {
+  .number {
+    width: 40%;
+  }
+}

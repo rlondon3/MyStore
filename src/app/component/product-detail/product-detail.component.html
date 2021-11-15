@@ -1,13 +1,21 @@
 <div *ngIf="product" class="item-detail-container">
   <img src="{{ product.img }}" alt="" />
   <div class="item-detail">
-    <p>{{ product.name }}</p>
-    <p>${{ product.price }}</p>
+    <p style="font-weight: bold">{{ product.name }}</p>
     <p>{{ product.desc }}</p>
-    <select name="sel-input" id="sel-input">
+    <p>${{ product.price }}</p>
+    <select
+      class="form-select form-select-lg mb-3"
+      aria-label=".form-select-lg example"
+    >
       <option *ngFor="let opt of opt" value="">{{ opt }}</option>
     </select>
-    <button (click)="addItem(product)">Add to Cart</button>
-    <div class="link" routerLink="/">Products</div>
+    <button
+      class="btn btn-primary"
+      style="margin-left: 20px"
+      (click)="addItem(product)"
+    >
+      Add to Cart
+    </button>
   </div>
 </div>

@@ -10,10 +10,11 @@ import { ItemsComponent } from './component/items/items.component';
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 import { CartComponent } from './component/cart/cart.component';
 import { ConfirmationComponent } from './component/confirmation/confirmation.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent, ProductsComponent, ItemsComponent, ProductDetailComponent, CartComponent, ConfirmationComponent],
-  imports: [BrowserModule, HttpClientModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule, FormsModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

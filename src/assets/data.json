@@ -17,20 +17,13 @@
   },
   {
     "id": 3,
-    "name": "GAME",
+    "name": "VIDEO GAME",
     "price": 49.99,
     "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1454/1454123_sa.jpg",
     "title": "GREAT DEALS ON GAMES",
     "desc": "BUY A NEW TOY FOR DAD!"
   },
-  {
-    "id": 4,
-    "name": "TV",
-    "price": 199.99,
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6202/6202105_sd.jpg",
-    "title": "ONLINE DISCOUNTS",
-    "desc": "BETTER VALUE WHEN SHOPPING WITH US!"
-  },
+
   {
     "id": 5,
     "name": "LAPTOP",
