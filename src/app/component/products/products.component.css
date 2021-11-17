@@ -1,1 +1,28 @@
+.prod-container {
+  padding: 0 10vw;
 
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.prod-container::-webkit-scrollbar {
+  display: none;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin-bottom: 64px;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}

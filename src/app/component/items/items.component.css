@@ -1,15 +1,16 @@
-.item-container {
+.card {
+  flex: 0 0 auto;
+  justify-content: center;
   align-items: center;
-  margin: 20px;
-}
-.info-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  margin-right: 40px;
+  margin-top: 40px;
 }
 img {
-  width: 50%;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  width: 170px;
+  height: 150px;
+  overflow: hidden;
 }
 @media (max-width: 496px) {
   .info-container {

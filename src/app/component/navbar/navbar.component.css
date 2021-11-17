@@ -1,0 +1,44 @@
+.navbar {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-container {
+  font-size: 29px;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.nav-links {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.nav-links:hover {
+  color: grey;
+}
+.text-muted:hover {
+  color: white !important;
+}
+.toTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  font-size: 56px;
+  color: grey;
+  text-decoration: none;
+}
+.arrow:hover {
+  color: black;
+}
+
+@media (max-width: 496px) {
+  .links-container {
+    font-size: 24px;
+  }
+}

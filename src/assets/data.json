@@ -23,6 +23,14 @@
     "title": "GREAT DEALS ON GAMES",
     "desc": "BUY A NEW TOY FOR DAD!"
   },
+  {
+    "id": 4,
+    "name": "TV",
+    "price": 399.99,
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6202/6202105_sd.jpg",
+    "title": "WATCH YOUR FAVORITE MOVIE",
+    "desc": "GET DAD THE ITEM HE TRULY WANTS!"
+  },
 
   {
     "id": 5,

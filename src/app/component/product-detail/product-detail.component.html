@@ -5,10 +5,11 @@
     <p>{{ product.desc }}</p>
     <p>${{ product.price }}</p>
     <select
+      [(ngModel)]="selected"
       class="form-select form-select-lg mb-3"
       aria-label=".form-select-lg example"
     >
-      <option *ngFor="let opt of opt" value="">{{ opt }}</option>
+      <option *ngFor="let opt of opt">{{ opt }}</option>
     </select>
     <button
       class="btn btn-primary"

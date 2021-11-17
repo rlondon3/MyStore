@@ -1,0 +1,22 @@
+<div class="container-fluid" id="top">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="nav-container">
+      <a class="navbar-brand" routerLink="/">
+        <h1 class="text-muted">My Store</h1>
+      </a>
+    </div>
+    <div class="links-container">
+      <a class="nav-links" routerLink="/">Products</a>
+      <a class="nav-links" style="margin-left: 10px" routerLink="/cart"
+        >Cart
+        <mat-icon
+          matBadge="{{ product.quantity }}"
+          matBadgeColor="warn"
+          *ngFor="let product of products"
+          value="product.quantity"
+          ><span class="material-icons"> shopping_cart </span></mat-icon
+        >
+      </a>
+    </div>
+  </nav>
+</div>
