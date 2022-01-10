@@ -19,7 +19,7 @@ export class ProductDetailComponent implements OnInit {
 
   public addItem(product: Product) {
     this.cartService.addProduct(this.selected, product);
-    console.log(this.selected);
+
     alert(`Item Added!`);
   }
 

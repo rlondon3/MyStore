@@ -12,6 +12,16 @@ export class CartService {
   getProductsInCart() {
     return this.productsInCart;
   }
+  getQtyInCart() {
+    const qty = this.productsInCart.reduce((pre, curr) => {
+      const currNum = curr.quantity;
+      const totalSum = pre + (currNum as unknown as number);
+      console.log(totalSum);
+      return totalSum;
+    }, 0);
+
+    return this.productsInCart;
+  }
 
   addProduct(quantity: number, product: Product) {
     const checkProduct = this.productsInCart.filter((p) => p.id === product.id);
@@ -25,7 +35,7 @@ export class CartService {
       this.productsInCart = this.productsInCart
         .filter((p) => p.id !== product.id)
         .concat(checkProduct);
-      console.log(this.productsInCart);
+
       return this.productsInCart;
     } else {
       const quantityInt = parseInt(quantity as unknown as string);
@@ -40,6 +50,11 @@ export class CartService {
       const changeQty = this.productsInCart.map((p) => {
         if (p.id === product.id) {
           p['quantity'] = parseInt(quantity as unknown as string);
+        }
+        if (isNaN(quantity)) {
+          quantity = 0;
+        } else {
+          quantity;
         }
         this.deleteProduct(product.id);
         alert(`Item Deleted!`);

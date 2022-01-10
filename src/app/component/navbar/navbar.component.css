@@ -18,10 +18,17 @@
   text-decoration: none;
 }
 .nav-links:hover {
-  color: grey;
+  color: yellow;
 }
-.text-muted:hover {
-  color: white !important;
+#store {
+  flex: 1;
+  font-size: 40px !important;
+  display: flex;
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+h1:hover {
+  color: yellow !important;
 }
 .toTop {
   display: flex;
